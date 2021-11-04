@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+
 <body>
   <main class="container">
     <div id="app">
@@ -62,7 +63,7 @@
           var api_key = 'key8eWuwMzjFZiIwD';
           var table = 'Online Menu (do not use)';
           var view = 'Menu View';
-          var record_fields = ['Category', 'Name', 'Description', 'Price' ]
+          var record_fields = ['Category', 'Name', 'Description', 'Image', 'Price' ]
 
 
           var self = this
@@ -107,18 +108,22 @@
   <style media="all">
     img {
       width: 20%;
+        border: solid 6px #212529;
+              margin-bottom: 10px;
+
     }
+      
+      .img.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 
     .container {
       margin-top: 20px;
     }
 
     
-  
-    img {
-      margin-bottom: 10px;
-    }
-      
       i{
           color: grey;
       }
